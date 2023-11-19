@@ -4,7 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class calcPrice extends StatefulWidget {
-  calcPrice(
+  const calcPrice(
       {super.key, required this.wax, required this.oil, required this.candles});
   final double wax;
   final double oil;
@@ -122,7 +122,7 @@ class _calcPriceState extends State<calcPrice> {
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.5,
                     child: Text(AppLocalizations.of(context)!.sSFTtext,
-                        style: TextStyle(color: Colors.white, fontSize: 15)),
+                        style: const TextStyle(color: Colors.white, fontSize: 15)),
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -138,19 +138,19 @@ class _calcPriceState extends State<calcPrice> {
                                 )),
                       );
                     },
-                    child: Text(
-                      AppLocalizations.of(context)!.sSFLBtext,
-                      style: TextStyle(color: Colors.white),
-                    ),
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all<Color>(Color(0xff0E59C4)),
+                          MaterialStateProperty.all<Color>(const Color(0xff0E59C4)),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                           borderRadius:
                               BorderRadius.circular(10.0), // radius you want
                         ),
                       ),
+                    ),
+                    child: Text(
+                      AppLocalizations.of(context)!.sSFLBtext,
+                      style: const TextStyle(color: Colors.white),
                     ),
                   )
                 ],
@@ -200,19 +200,19 @@ class _calcPriceState extends State<calcPrice> {
                     ),
                   );
                 },
-                child: Text(
-                  AppLocalizations.of(context)!.sSFLBtext,
-                  style: TextStyle(color: Colors.white),
-                ),
                 style: ButtonStyle(
                   backgroundColor:
-                      MaterialStateProperty.all<Color>(Color(0xff0E59C4)),
+                      MaterialStateProperty.all<Color>(const Color(0xff0E59C4)),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(10.0), // radius you want
                     ),
                   ),
+                ),
+                child: Text(
+                  AppLocalizations.of(context)!.sSFLBtext,
+                  style: const TextStyle(color: Colors.white),
                 ),
               )
             ]),
@@ -237,8 +237,8 @@ class _calcPriceState extends State<calcPrice> {
     double res = 0;
 
     return Container(
-      padding: EdgeInsets.all(8),
-      margin: EdgeInsets.symmetric(horizontal: 25, vertical: 8),
+      padding: const EdgeInsets.all(8),
+      margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 8),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
         color: Colors.white.withOpacity(0.3),
@@ -252,7 +252,7 @@ class _calcPriceState extends State<calcPrice> {
             Center(
               child: Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -262,14 +262,14 @@ class _calcPriceState extends State<calcPrice> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text(
+                const Text(
                   "%",
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * .4,
                   child: TextField(
-                    style: TextStyle(color: Colors.black),
+                    style: const TextStyle(color: Colors.black),
                     enabled: enable,
                     controller: precent,
                     keyboardType: TextInputType.number,
@@ -306,7 +306,7 @@ class _calcPriceState extends State<calcPrice> {
               children: [
                 Text(
                   AppLocalizations.of(context)!.sSFBsubtitle,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 SizedBox(
                   width: 150,
@@ -323,7 +323,7 @@ class _calcPriceState extends State<calcPrice> {
               children: [
                 Text(
                   AppLocalizations.of(context)!.sSFBsubtitle2,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * .3,
@@ -355,7 +355,7 @@ class _calcPriceState extends State<calcPrice> {
               children: [
                 Text(
                   AppLocalizations.of(context)!.sSFBprice,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * .2,

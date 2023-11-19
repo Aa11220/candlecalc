@@ -30,7 +30,6 @@ TextEditingController? candlecountcontroller = null;
 class _FinalScreenState extends State<FinalScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     oilpricecontroller = TextEditingController();
     oilWeightcontroller = TextEditingController(
@@ -140,20 +139,13 @@ class _FinalScreenState extends State<FinalScreen> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        print(widget.price1);
-                        print(widget.price2);
-                        print(widget.price3);
                         setState(() {
                           flag = true;
                         });
                       },
-                      child: Text(
-                        AppLocalizations.of(context)!.tscreentext,
-                        style: TextStyle(color: Colors.white),
-                      ),
                       style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Color(0xff0E59C4)),
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            const Color(0xff0E59C4)),
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
@@ -162,23 +154,28 @@ class _FinalScreenState extends State<FinalScreen> {
                           ),
                         ),
                       ),
+                      child: Text(
+                        AppLocalizations.of(context)!.tscreentext,
+                        style: const TextStyle(color: Colors.white),
+                      ),
                     ),
                   ],
                 ),
               ),
               if (flag)
                 Container(
-                  margin: EdgeInsets.only(bottom: 20),
+                  margin: const EdgeInsets.only(bottom: 20),
                   width: 300,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(50)),
+                    borderRadius: const BorderRadius.all(Radius.circular(50)),
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
                         color: Colors.white.withOpacity(0.3),
                         spreadRadius: 4,
                         blurRadius: 0,
-                        offset: Offset(0, -5), // changes position of shadow
+                        offset:
+                            const Offset(0, -5), // changes position of shadow
                       ),
                     ],
                   ),
@@ -228,8 +225,8 @@ class _FinalScreenState extends State<FinalScreen> {
       bool convert,
       Function(num) save) {
     return Container(
-      padding: EdgeInsets.all(12),
-      margin: EdgeInsets.symmetric(vertical: 5),
+      padding: const EdgeInsets.all(12),
+      margin: const EdgeInsets.symmetric(vertical: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
         color: Colors.white.withOpacity(0.3),
@@ -242,7 +239,7 @@ class _FinalScreenState extends State<FinalScreen> {
           Center(
             child: Text(
               "$title",
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
           ),
           Row(
@@ -250,7 +247,7 @@ class _FinalScreenState extends State<FinalScreen> {
             children: [
               Text(
                 "$fristSubTitle",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: const TextStyle(color: Colors.white, fontSize: 20),
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width * contentWidth,
@@ -279,7 +276,7 @@ class _FinalScreenState extends State<FinalScreen> {
             children: [
               Text(
                 "$secondSubTitle",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: const TextStyle(color: Colors.white, fontSize: 20),
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width * contentWidth,
@@ -297,7 +294,7 @@ class _FinalScreenState extends State<FinalScreen> {
             children: [
               Text(
                 AppLocalizations.of(context)!.sSFBprice,
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: const TextStyle(color: Colors.white, fontSize: 20),
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width * contentWidth,
@@ -321,12 +318,12 @@ Widget _costtext(String text, String price, {bool last = false}) {
       RichText(
         text: TextSpan(
           text: text,
-          style: TextStyle(
+          style: const TextStyle(
               fontWeight: FontWeight.bold, fontSize: 15, color: Colors.black),
           children: <TextSpan>[
             TextSpan(
                 text: "$price",
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     color: Color(0xff0E59C4))),

@@ -13,12 +13,12 @@ class MyDrawer extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(AppLocalizations.of(context)!.menu),
-          backgroundColor: Color(0xff0E59C4),
+          backgroundColor: const Color(0xff0E59C4),
         ),
         body: ListView(
           children: [
             ListTile(
-              leading: Icon(Icons.text_snippet_outlined),
+              leading: const Icon(Icons.text_snippet_outlined),
               title: Text(AppLocalizations.of(context)!.templates),
               onTap: () {
                 Navigator.push(context,
@@ -26,11 +26,11 @@ class MyDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: Icon(Icons.account_balance_rounded),
+              leading: const Icon(Icons.account_balance_rounded),
               title: Text(AppLocalizations.of(context)!.drawer2),
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => infoPage()));
+                    MaterialPageRoute(builder: (context) => const infoPage()));
               },
             ),
             const Divider(
@@ -43,14 +43,14 @@ class MyDrawer extends StatelessWidget {
             ExpansionTile(
               shape: const Border(),
               title: Text(AppLocalizations.of(context)!.applang),
-              leading: Icon(Icons.language), //add icon
+              leading: const Icon(Icons.language), //add icon
               // childrenPadding: EdgeInsets.only(left: 60), //children padding
               children: [
                 ListTile(
                   title: RichText(
                     text: TextSpan(
                       children: <TextSpan>[
-                        TextSpan(
+                        const TextSpan(
                           text:
                               '	\u{1F1FA}\u{1F1F8}          ', // emoji characters
                           style: TextStyle(
@@ -59,14 +59,14 @@ class MyDrawer extends StatelessWidget {
                         ),
                         TextSpan(
                             text: AppLocalizations.of(context)!.drawer31,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Colors.black) // non-emoji characters
                             ),
                       ],
                     ),
                   ),
                   onTap: () {
-                    MyApp.setlocal(context, Locale("en"));
+                    MyApp.setlocal(context, const Locale("en"));
                   },
                 ),
 
@@ -74,7 +74,7 @@ class MyDrawer extends StatelessWidget {
                   title: RichText(
                     text: TextSpan(
                       children: <TextSpan>[
-                        TextSpan(
+                        const TextSpan(
                           text:
                               '	\u{1F1EA}\u{1F1EC}          ', // emoji characters
                           style: TextStyle(
@@ -83,14 +83,14 @@ class MyDrawer extends StatelessWidget {
                         ),
                         TextSpan(
                             text: AppLocalizations.of(context)!.drawer32,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Colors.black) // non-emoji characters
                             ),
                       ],
                     ),
                   ),
                   onTap: () {
-                    MyApp.setlocal(context, Locale("ar"));
+                    MyApp.setlocal(context, const Locale("ar"));
                   },
                 ),
 

@@ -1,15 +1,14 @@
 import 'dart:convert';
 
-import 'package:candle/models/cargo.dart';
-import 'package:candle/views/commonWidgets/drawer.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
-import 'package:candle/utility/commonFuncation.dart';
-import 'package:candle/views/calcPrice/calcPrice.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:candle/models/cargo.dart';
+import 'package:candle/utility/commonFuncation.dart';
+import 'package:candle/views/calcPrice/calcPrice.dart';
+import 'package:candle/views/commonWidgets/drawer.dart';
 
 class mainScreen extends StatefulWidget {
   const mainScreen({
@@ -70,14 +69,14 @@ class _mainScreenState extends State<mainScreen> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(50)),
+                    borderRadius: const BorderRadius.all(Radius.circular(50)),
                     border: Border.all(color: Colors.white, width: 1),
                     color: Colors.white.withOpacity(0.3),
                   ),
                   width: 300,
-                  padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+                  padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -85,7 +84,7 @@ class _mainScreenState extends State<mainScreen> {
                       SizedBox(
                         width: 200,
                         child: TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             filled: true,
                             fillColor: Colors.white,
                           ),
@@ -102,14 +101,14 @@ class _mainScreenState extends State<mainScreen> {
                           },
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       Text(AppLocalizations.of(context)!.fSFBoil),
                       SizedBox(
                         width: 200,
                         child: TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             filled: true,
                             fillColor: Colors.white,
                           ),
@@ -126,14 +125,14 @@ class _mainScreenState extends State<mainScreen> {
                           },
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       Text(AppLocalizations.of(context)!.fSFBcandles),
                       SizedBox(
                         width: 200,
                         child: TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             filled: true,
                             fillColor: Colors.white,
                           ),
@@ -154,18 +153,18 @@ class _mainScreenState extends State<mainScreen> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(bottom: 20),
+                  margin: const EdgeInsets.only(bottom: 20),
                   width: 300,
                   height: 210,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(50)),
+                    borderRadius: const BorderRadius.all(Radius.circular(50)),
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
                         color: Colors.white.withOpacity(0.3),
                         spreadRadius: 4,
                         blurRadius: 0,
-                        offset: Offset(0, -5), // changes position of shadow
+                        offset: const Offset(0, -5), // changes position of shadow
                       ),
                     ],
                   ),
@@ -177,7 +176,7 @@ class _mainScreenState extends State<mainScreen> {
                         textDirection: TextDirection.ltr,
                         child: Text(
                           printunits(waxneeded),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Color(0xff0E59C4),
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
@@ -196,7 +195,7 @@ class _mainScreenState extends State<mainScreen> {
                         textDirection: TextDirection.ltr,
                         child: Text(
                           printunits(oilneeded),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Color(0xff0E59C4),
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
@@ -204,12 +203,8 @@ class _mainScreenState extends State<mainScreen> {
                         ),
                       ),
                       ElevatedButton(
-                        child: Text(
-                          AppLocalizations.of(context)!.fSFBcalc,
-                          style: TextStyle(color: Colors.white),
-                        ),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xff0E59C4),
+                          backgroundColor: const Color(0xff0E59C4),
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -222,16 +217,16 @@ class _mainScreenState extends State<mainScreen> {
                             ),
                           );
                         },
+                        child: Text(
+                          AppLocalizations.of(context)!.fSFBcalc,
+                          style: const TextStyle(color: Colors.white),
+                        ),
                       ),
                       // TODO
                     ],
                   ),
                 ),
                 ElevatedButton(
-                  child: Text(
-                    AppLocalizations.of(context)!.fSFBsave,
-                    style: TextStyle(color: Colors.white),
-                  ),
                   onPressed: () {
                     inlist = cargo(
                         weight: weight.toStringAsFixed(2),
@@ -247,14 +242,18 @@ class _mainScreenState extends State<mainScreen> {
                     } else {
                       savedata(cargo: inlist);
                       ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
+                        const SnackBar(
                           content: Text("Saved"),
                         ),
                       );
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xff0E59C4),
+                    backgroundColor: const Color(0xff0E59C4),
+                  ),
+                  child: Text(
+                    AppLocalizations.of(context)!.fSFBsave,
+                    style: const TextStyle(color: Colors.white),
                   ),
                 )
               ],

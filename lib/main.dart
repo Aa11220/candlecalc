@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
           filled: true,
           fillColor: Colors.white,
         ),
-        scaffoldBackgroundColor: Color(0xff90B5EA),
+        scaffoldBackgroundColor: const Color(0xff90B5EA),
         appBarTheme:
             AppBarTheme(backgroundColor: Colors.white.withOpacity(0.2)),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       locale: _locale,
-      home: mainScreen(),
+      home: const mainScreen(),
     );
   }
 }

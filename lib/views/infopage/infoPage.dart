@@ -12,10 +12,10 @@ class infoPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           AppLocalizations.of(context)!.candlesacademy,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xff0E59C4),
+        backgroundColor: const Color(0xff0E59C4),
       ),
       body: Center(
         child: Padding(
@@ -25,9 +25,9 @@ class infoPage extends StatelessWidget {
               SizedBox(
                   child: Text(
                 AppLocalizations.of(context)!.infotext,
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               )),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               SizedBox(
@@ -43,17 +43,17 @@ class infoPage extends StatelessWidget {
                       throw 'Could not launch $url';
                     }
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.facebook,
                     color: Colors.white,
                   ),
                   label: Text(
                     AppLocalizations.of(context)!.facebook,
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   ),
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Color(0xff0E59C4)),
+                        MaterialStateProperty.all<Color>(const Color(0xff0E59C4)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius:
@@ -63,7 +63,7 @@ class infoPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               SizedBox(
@@ -79,17 +79,17 @@ class infoPage extends StatelessWidget {
                       throw 'Could not launch $url';
                     }
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.youtube_searched_for,
                     color: Colors.white,
                   ),
                   label: Text(
                     AppLocalizations.of(context)!.youtube,
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   ),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        Color.fromARGB(255, 255, 0, 0)),
+                        const Color.fromARGB(255, 255, 0, 0)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius:

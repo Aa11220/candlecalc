@@ -14,7 +14,7 @@ Future<List<cargo>> getSaved() async {
 }
 
 class savedScreen extends StatelessWidget {
-  savedScreen({super.key});
+  const savedScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class savedScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(AppLocalizations.of(context)!.templates),
-          backgroundColor: Color(0xff0E59C4),
+          backgroundColor: const Color(0xff0E59C4),
         ),
         body: FutureBuilder(
           future: getSaved(),
@@ -51,19 +51,19 @@ class savedScreen extends StatelessWidget {
                       children: [
                         Text(
                           "${AppLocalizations.of(context)!.fSSBwaxneeded} ${cargolist[index].waxneeded}",
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
                           " ${AppLocalizations.of(context)!.fSSBoilneeded} ${cargolist[index].oilneeded}",
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Row(
                           children: [
                             Text(
                                 "${AppLocalizations.of(context)!.totalweight} : ${cargolist[index].weight}"),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             Text(
