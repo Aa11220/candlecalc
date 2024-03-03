@@ -16,7 +16,7 @@ it give the maker ability to track price of each type
     
   </tr>
   <tr>
-    <td> <img src=".Images_For_Read_ME/Screenshot_1709419817.png" alt="drawing" width="200"/></td>
+    <td> <img src="./Images_For_Read_ME/Screenshot_1709419817.png" alt="drawing" width="200"/></td>
     <td><strong>Login Screen</strong></td>
     
   </tr>
