@@ -23,9 +23,8 @@ it give the maker ability to track price of each type
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419891.png" alt="drawing" width="200"/></td>
     <td>
-    <strong>Product Screen</strong>
-    <li>Search</li>
-    <li>Add</li>
+    <strong>types wax Screen</strong>
+   
     </td>
     
   </tr>
@@ -43,11 +42,7 @@ it give the maker ability to track price of each type
     <td><strong>Add Prepare Area </strong></td>
     
   </tr>
-  <tr>
-    <td> <img src="./Images_for_readme/Product_Page/Screenshot_1708712901.png" alt="drawing" width="200"/></td>
-    <td><strong>Add Note to Item</strong></td>
-    
-  </tr>
+
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419914.png" alt="drawing" width="200"/></td>
     <td><strong>Add ingredients</strong></td>
@@ -55,24 +50,18 @@ it give the maker ability to track price of each type
   </tr>
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419916.png" alt="drawing" width="200"/></td>
-    <td><strong>Add Material</strong></td>
+    <td><strong>result Screen</strong></td>
     
   </tr>
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419927.png" alt="drawing" width="200"/></td>
-    <td><strong>Add Component</strong></td>
+    <td><strong>Saved Temples</strong></td>
     
   </tr>
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419946.png" alt="drawing" width="200"/></td>
     <td><strong>Drawer</strong></td>
-    
-  </tr>
-  <tr>
-    <td> <img src="./Images_For_Read_ME/Screenshot_1709419949.png" alt="drawing" width="200"/></td>
-    <td><strong>Purchase Screen</strong></td>
-    
-  </tr>
+
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419952.png" alt="drawing" width="200"/></td>
     <td><strong>Main Screen Ar </strong></td>
