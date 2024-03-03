@@ -28,15 +28,7 @@ it give the maker ability to track price of each type
     
     
   </tr>
-  <tr>
-    <td> <img src="./Images_For_Read_ME/Screenshot_1709419894.png" alt="drawing" width="200"/></td>
-    <td>  <strong>Product Screen</strong>
-    <li>Show All product details</li>
-    <li>Add Note</li>
-    <li>Add Ingredient</li>
-    </td>
-    
-  </tr>
+  
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419894.png" alt="drawing" width="200"/></td>
     <td><strong>Add Prepare Area </strong></td>
