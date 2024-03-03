@@ -23,9 +23,9 @@ it give the maker ability to track price of each type
   <tr>
     <td> <img src="./Images_For_Read_ME/Screenshot_1709419891.png" alt="drawing" width="200"/></td>
     <td>
-    <strong>types wax Screen</strong>
+    <strong>types wax Screen</strong></td>
    
-    </td>
+    
     
   </tr>
   <tr>
